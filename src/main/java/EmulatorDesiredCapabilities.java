@@ -9,11 +9,11 @@ public class EmulatorDesiredCapabilities {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("appium:deviceName", "APPIUM_EMULATOR");
-        desiredCapabilities.setCapability("appium:app", "/Users/THW3350/AppiumWorkshop/Apps/VodQA.apk");
+        desiredCapabilities.setCapability("appium:app", System.getProperty("user.dir") + "/Apps/VodQA.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         desiredCapabilities.setCapability("appium:packageName", "com.vodqareactnative");
         desiredCapabilities.setCapability("appium:activityName", "com.vodqareactnative/.MainActivity");
 
-        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), desiredCapabilities);
     }
 }

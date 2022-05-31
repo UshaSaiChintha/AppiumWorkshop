@@ -12,7 +12,7 @@ public class BrowserDesiredCapabilities {
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         desiredCapabilities.setCapability("browserName", "Chrome");
 
-        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), desiredCapabilities);
         androidDriver.get("https://facebook.com");
     }
 }

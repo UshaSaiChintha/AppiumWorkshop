@@ -9,9 +9,9 @@ public class RealDeviceDesiredCapabilities {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("appium:deviceName", "Android Device");
-        desiredCapabilities.setCapability("appium:app", "/Users/THW3350/AppiumWorkshop/Apps/TheApp-v1.10.0.apk");
+        desiredCapabilities.setCapability("appium:app", System.getProperty("user.dir") +"/Apps/TheApp-v1.10.0.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
 
-        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+        AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), desiredCapabilities);
     }
 }
