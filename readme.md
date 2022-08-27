@@ -1,7 +1,7 @@
 # Assignments
 
 ### Please come up with a class for automating each of the following scenarios. 
-### The app for the same is present in the Apps folder.
+### The app and vodQA app for the same is present in the Apps folder.
 ### 
 
 ## The APP
